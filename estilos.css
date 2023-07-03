@@ -1,0 +1,2263 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face{
+	font-family: "AsRomaRegular";
+	src: url("fonts/ASRoma-Regular.ttf") format("truetype")
+}
+
+@font-face{
+	font-family: "AsRomaInline";
+	src: url("fonts/as-roma-extra-bold-italic-inline.c7f310f745be4ed155f548162d02e6b1.ttf") format("truetype")
+}
+
+@font-face{
+	font-family: "AsRomaLight";
+	src:url("fonts/ASRoma-Light.ttf") format("truetype")
+}
+
+@font-face{
+	font-family: "AsRomaExtraBold";
+	src: url("fonts/ASRoma-ExtraBold.ttf") format("truetype")
+}
+
+@font-face{
+	font-family: "AsRomaMedium";
+	src: url("fonts/ASRoma-Medium.ttf") format("truetype")
+}
+
+/*Nuestro hermoso trabajo*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: AsRomaRegular;
+	}
+
+body{
+	background: black;
+}
+
+.color-amarillo{
+	color: #fbb900ff;
+}
+
+.color-blanco{
+	color: #fff;
+}
+
+.color-rojo{
+	color: #990a2c;
+}
+
+.color-gris{
+	color: #707070;
+}
+
+.color-gris-oscuro{
+	color: #212529;	
+}
+
+.background-blanco{
+	background-color: white;
+}
+
+.background-gris{
+	color: #212529;
+}
+
+.background-amarillo{
+	background-color: #fbb900ff;
+}
+
+.background-rojo{
+	background-color: #990a2c;
+}
+
+.background-gris-oscuro{
+	background-color: #212529;
+}
+/*----------------------------------Header-------------------------------------*/
+header{
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
+}
+
+.fondoamarillo{
+	align-items: center;
+	display: flex;
+	height: 50px;
+	background-color: #fbba00;
+	justify-content: space-between;
+}
+
+.fondorojo{
+	align-items: center;
+	display: flex;
+	height: 50px;
+	justify-content: space-between;
+	padding-left: 17px;
+	padding: 0 30px 0 120px;
+	background-color: #980f2f;
+}
+
+.botonesheader{
+	display: flex;
+	gap: 15px;
+}
+
+.romalogo{
+	padding-left: 18px;
+	padding-top: 65px;
+}
+
+.hamburgesa{
+	position: absolute;
+}
+
+.botonera{
+	text-align: center;
+	align-items: center;
+	display: flex;
+	margin-left: 50px;
+}
+
+.boton{
+	color: white;
+	text-transform: uppercase;
+	margin: 7px;
+}
+
+.idiomaingles{
+	text-transform: uppercase;
+	color: white;
+}
+
+.flechaabajo{
+	color: white;
+}
+
+.login{
+	display: flex;
+	color: white;
+	text-transform: uppercase;
+	align-items: center;
+}
+
+.colunma-derecha{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+	
+}
+.botontickets{
+	height: 40px;
+	width: 145px;
+	background: #FFBA00;
+	border-radius: 100px;
+	color: #990A2C;
+	text-transform: uppercase;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	border: transparent;
+}
+
+.botonshop{
+	height: 40px;
+	width: 135px;
+	background: #990A2C;
+	border: 2px solid #FFFFFF;
+	border-radius: 100px;
+	color: white;
+	text-transform: uppercase;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	margin-right: 20px;
+	gap: 10px;
+}
+
+.botoneraderecha{
+	padding-right: 20px;
+}
+
+.newbalancelogo{
+	padding-right: 30px;
+}
+
+.fondorojo a:hover{
+	color: rgba(209,209,209,0.46); 
+}
+
+.hamburgesa{
+	filter: brightness(0) invert(1);
+	transition: transform .2s;
+}
+
+.hamburgesa:hover{
+	filter: none;
+	transition: 0.4s ease-in-out;
+	transform: scale(1.2);
+}
+
+.botontickets:hover{
+	background-color: hsla(0,0%,85%,0.82);
+}
+
+.botonshop:hover{
+	background-color: hsla(0,0%,85%,0.82);
+}
+
+#loginparamobile{
+	visibility: hidden;
+}
+/*-----------------------------------Final del header------------------------------*/
+
+
+/*---------------------------------------Main---------------------------------------*/
+
+main{
+	height: 100%;
+}
+
+.flex{
+	display: flex;
+	flex-direction: column;
+}
+
+.carrusel-principal-txt {
+    display: flex;
+}
+
+.carrusel-principal-mobile{
+	display: none;
+}
+
+.contenedor-controles {
+	margin-top: 50%;
+	display: flex;
+	align-items: center;
+	align-content: center;
+}
+
+.control {
+	position: absolute;
+	left: 45%;
+	transform: translateY(-50%);
+	cursor: pointer;
+	z-index: 10;
+	opacity: 1;
+	height: 30px;
+}
+
+.control:hover {
+	opacity: 0.5;
+}
+
+.control:nth-of-type(2) {
+	left: auto;
+	right: 45%;
+}
+
+.carrusel-fondo {
+	margin-top: 90px;
+	width: 100%;
+	transition: 0.5s;
+}
+
+.partidos{
+	color: white;
+	background-color: #18191c;
+	align-items: center;
+	align-content: center;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 533px;
+	justify-content: center;
+}
+
+.partidos h1{
+	color: #808084;
+	font-size: 30px;
+	font-weight: 500;
+	justify-content: center;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+.partidos h2{
+	font-size: 24px;
+	letter-spacing: 1px;
+	line-height: 35px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.partidos h3{
+	font-size: 20px;
+	line-height: 24px;
+	text-align: center;
+	width: 100%;
+	font-weight: 400;
+}
+
+
+.tiempo-proximo-partido{
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	margin-bottom: 50px;
+}
+
+.caja-de-partidos{
+	display: flex;
+	width: 1400px;
+	max-width: 100%;
+}
+
+.caja-equipo-local{
+	align-items: center;
+	display: flex;
+	width: 40%;
+	gap: 150px;
+	font-size: 40px;
+	color: #808084;
+}
+
+.informacion-caja-partido{
+	width: 20%;
+	color: #fbba00;
+	font-size: 12px;
+	line-height: 1.4;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.caja-equipo-visitante{
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	width: 40%;
+	gap: 100px;
+	font-size: 40px;
+	color: #808084;
+}
+
+.barras-de-color-de-caja-de-partido{
+	display: flex;
+	margin: 20px;
+	margin-bottom: 50px;
+	width: 100%;
+	justify-content: center;
+}
+
+.barras-de-color-de-caja-de-partido-local{
+	background-color: #808084;
+	width: 700px;
+}
+
+.barras-de-color-de-caja-de-partido-visitante{
+	background-color: #990A2C;
+	width: 700px;
+	height: 10px;
+}
+
+.boton-expandir-tarjeta-de-partido{
+	color: #808084;
+	cursor: pointer;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.noticias{
+	height: 405px;
+	background-color: #18191c;
+}
+
+.botones-header-noticias{
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 200px;
+	gap: 20px;
+}
+
+#botones-noticias{
+	background-color: #808084;
+	color: #fff;
+	padding: 0.563rem 1.125rem;
+	border-radius: 30px;
+	box-shadow: none;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 800;
+	line-height: 20px;
+	margin: 0;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all .5s ease 0s;
+	white-space: nowrap;
+}
+
+#botones-noticia:hover{
+	background-color: hsla(0,0%,68%,1.00);
+}
+
+.noticias button{
+	background-color: transparent;
+	border-color: transparent;
+	border-radius: 30px;
+	box-shadow: none;
+	cursor: pointer;
+	padding: 0.563rem 1.125rem;
+	color: #bdbbba;
+	font-size: 16px;
+	font-weight: 800;
+	line-height: 20px;
+	margin: 0;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all .5s ease 0s;
+	white-space: nowrap;
+}
+
+.noticias button:hover{
+	 background-color: hsla(0,0%,74%,1.00);
+	color: hsla(0,0%,100%,1.00);
+
+}
+
+.lista-de-noticias{
+	display: grid;
+	grid-template-rows: 338px;
+	grid-column-gap: 20px;
+	grid-auto-flow: column;
+	align-items: center;
+	width: 100%;
+	scroll-snap-type: x mandatory;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	margin: auto;
+	max-width: 1460px;
+}
+
+.lista-de-noticias h3{
+	color: white;
+	bottom: 30px;
+	font-weight: 200;
+	padding-left: 15px;
+	font-size: 18px;
+	line-height: 5px;
+	position: relative;
+}
+
+.lista-de-noticias article{
+	color: white;
+	display: flex;
+	width: 450px;
+	font-size: 15px;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+/*------------------------SECCION MATCHES------------------------*/
+
+.titulo-principal-matches{
+	font-size: 80px;
+	font-style: italic;
+	font-weight: 800;
+	line-height: 80px;
+	margin: 50px 0px 15px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: AsRomaInline;
+}
+
+.matches{
+	display: flex;
+	justify-content: center;
+	width: auto;
+}
+
+.secciones{
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	text-transform: uppercase;
+	padding: 40px;
+	height: 638px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#fondo-previuos{
+	background-image:url("img/index/main/matches/previous/fondoprevious.png");
+}
+
+#fondo-upcoming{
+	background-image: url("img/index/main/matches/upcoming/fondoupcoming.png");
+	padding-bottom: 40px;
+}
+
+.bloque-dos{
+	margin-bottom: 26px;
+}
+.titulo{
+	font-size: 32px;
+	font-weight: 800;
+	text-align: center;
+}
+	
+.equipos-logos{
+	display: flex;
+	flex-direction: column;
+	padding: 0 32px;
+	gap: 50px;
+}
+
+.equipos{
+	display: flex;
+	padding: 0 32px;
+	row-gap: 22px;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.h4-matches{
+	font-size: 16px;
+	text-align: center;
+	font-weight: 400;
+}
+
+#p-dia{
+	padding-top: 10px;
+}
+.resultado{
+	font-size: 60px;
+	font-weight: 800;
+	border-radius: 20px;
+}
+
+.boton-general-matches{
+	font-weight: 800;
+	padding: 8px 19px;
+	cursor: pointer;
+	text-decoration: none;
+	border-radius: 20px;
+	transition: .3s ease-in-out;	
+}
+
+.boton-general-matches:hover{
+	background-color: rgba(33,37,41,1.00);
+	color: #fff;
+	border: 2px solid #212529;
+}
+
+.boton-matches{
+	border: 2px solid #fbba00;
+}
+
+.bolitas{
+	display: flex;
+	column-gap: 15px;
+	align-items: center;
+	cursor: pointer;
+}
+
+.style{
+	list-style-type: none;
+}
+
+.flecha-derecha{
+	padding-left: 160px;
+}
+
+.flecha-izquierda{
+	padding-right: 160px;
+}
+
+/*------------------------SECCION MATCHES FIN------------------------*/
+
+/*------------------------SECCION PLAYERS------------------------*/
+
+#fondo-players{
+	width: 100%;
+	background-color: #fff;
+}
+
+.boton-jugadores{
+	background-color: #d4d4d5;
+	color: #000;
+	padding: 10px 24px;
+	border-radius: 25px;
+	cursor: pointer;
+	font-family: "AsRomaLight";
+	border-color: transparent;
+	font-size: 14px;
+	font-weight: 600;
+	margin: 0px 8px;
+	transition: .3s ease-in-out;	
+}
+
+.boton-jugadores:hover{
+	background-color: hsla(210,11%,15%,1.00);
+	color: #fff
+}
+
+#botones-players{
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	margin: 20px;
+	gap: 10px;
+}
+
+.jugadores-carrusel{
+	width: 70%;
+	display: flex;
+	cursor: pointer;
+	padding-bottom: 20px;
+	list-style-type: none;
+	grid-column-gap: 20px;
+	overflow-x: scroll;
+	margin: auto;
+	margin-bottom: 50px;
+}
+
+.fotos-jugadores{
+	border-radius: 50%;
+}
+.nombres-jugadores{
+	font-family: AsRomaMedium;
+	font-size: 14px;
+	margin: 8px 0 0;
+	text-align: center;
+}
+/*------------------------SECCION PLAYERS FIN------------------------*/
+
+/*------------------------SECCION DYBALA------------------------*/
+
+
+.titulo-principal-players{
+/*REPETIMOS ESTA CLASE YA QUE EN EL @MEDIA UNO CAMBIA Y OTRO NO*/
+	font-size: 80px;
+	font-style: italic;
+	font-weight: 800;
+	line-height: 80px;
+	margin: 50px 0px 15px;
+	text-align: center;
+	font-family: AsRomaInline;
+}
+
+.dybala{
+	align-items: center;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	text-transform: uppercase;
+}
+
+#columna-izq{
+	margin-top: -40px;
+	max-width: 100%;
+	padding: 0px 26px;
+}
+
+.columna-der{
+	margin-right: 50px;
+}
+
+#imgdybala{
+	min-height: 500px;
+	min-width: 500px;
+	height: auto;
+	width: 100%;
+	vertical-align: middle;
+}
+
+.h2-dybala{
+	font-size: 35px;
+	font-family: AsRomaMedium;
+}
+
+.columna-der h2{
+	font-size: 35px;
+	font-family: AsRomaMedium;
+}
+
+#veintiuno{
+	padding: 10px 0px 20px;
+	font-family: AsRomaInline;
+	color:#707070;
+}
+
+#forward{
+	letter-spacing: 2px;
+	font-family: AsRomaLight;
+	color:#707070;
+	font-size: 15px;
+	font-weight: 600;
+}
+		
+.numeros{
+	font-size: 30px;
+	padding-bottom: 5px;
+	color: #fbb900ff;
+}
+
+.cuarta-columna article{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.cuarta-columna h3{
+	font-size: 30px;
+	padding-bottom: 5px;
+	color: #fbb900ff;
+}
+
+.cuarta-columna p{
+	font-size: 12px;
+	color:#707070;
+}
+
+#profile{
+	padding-right: 8px;
+	text-decoration: none;
+	color: #fbb900ff;
+	font-size: 12px;
+}
+
+#profile:hover{
+	color: #fff;
+}
+
+.p-dybala{
+	font-size: 12px;
+	color:#707070;
+}
+
+.boton-dybala{
+	display: flex;
+	color:#fbb900ff;
+	cursor: pointer;
+	padding: 6px 12px;
+	font-weight: 500;
+	border-radius: 100px;
+	align-items: center;
+	height: 32px;
+	width: 96px;
+	text-decoration: none;
+}
+
+#camiseta-buy{
+	margin-right: 6px;
+}
+
+.numros article{
+	font-size: 30px;
+	padding-bottom: 5px;
+}
+
+#perfil{
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	margin-left: 12px;
+	color: #fbba00;
+}
+
+.botones-dybala{
+	display: flex;
+	margin: 20px 0px;
+}
+
+.boton-dybala:hover{
+	background-color: rgba(92,7,28,1.00);
+	color: #fff;
+}
+
+.conjunto{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+.cuarta-columna{
+	display: flex;
+	gap: 50px;
+	padding-top: 30px;
+}
+
+/*------------------------SECCION DYBALA FIN------------------------*/
+
+/*START STORE*/
+.store{
+	display: grid;
+	grid-template-rows: 390px;
+	grid-template-columns: 360px 360px 360px 360px 360px 360px 360px;
+	grid-column-gap: 20px;
+	grid-auto-flow: column;
+	justify-content: space-between;
+	justify-items: center;
+	align-content: center;
+	align-items: center;
+	width: 100%;
+	height: 540px;
+	scroll-snap-type: x mandatory;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	margin: auto;
+	max-width: 1460px;
+	min-width: 320px;
+}
+
+.storegeneral{
+	background: #f6f6f6;
+	overflow: hidden;
+	padding: 30px 0 3rem;
+}
+
+.listore{
+	margin-right: 30px;
+	height: 460px;
+	background-color: #fff;
+	box-shadow: 0 5px 6px rgba(0,0,0,.161);
+	padding: 0px 20px 0px 10px;
+	object-fit: cover;
+	scroll-snap-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.headerstore{
+	justify-content: space-between;
+	margin: auto;
+	max-width: 1440px;
+	align-items: center;
+	display: flex;
+	margin-bottom: 3rem;
+}
+
+.headerstore h2{
+	color: #707070;
+	font-size: 38px;
+	font-style: italic;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+#botonall{
+	background-color: #808084;
+	color: #fff;
+}
+
+#botonall:hover{
+	 background-color: hsla(0,0%,68%,1.00);
+}
+
+.headerstore button{
+	background-color: transparent;
+	border-color: transparent;
+	border-radius: 30px;
+	padding: 0.563rem 1.125rem;
+	color: #bdbbba;
+	font-size: 16px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.headerstore button:hover{
+	 background-color: hsla(0,0%,74%,1.00);
+	color: hsla(0,0%,100%,1.00);
+}
+
+.headerstore a{
+	align-self: center;
+	display: flex;
+	font-size: 16px;
+	font-weight: 800;
+	height: 50px;
+	letter-spacing: 1px;
+	line-height: 50px;
+	margin-left: 16px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+.headerstore img{
+	margin: 0 10px;
+	object-fit: contain;
+	width: 23px;
+}
+
+.listore h3{
+	font-size: 16px;
+	height: 60px;
+	padding: 10px 20px;
+	transition-delay: .1s;
+	transition-duration: .2s;
+	transition-property: font-size;
+	z-index: 30;
+}
+
+.listore div{
+	align-items: center;
+	background-color: #990a2c;
+	border-radius: 100px;
+	color: #fbba00;
+	display: flex;
+	font-size: 12px;
+	justify-content: space-evenly;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	max-width: 60%;
+	min-width: 150px;
+	padding: 6px 12px;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+.listore div:hover{
+	background-color: hsla(44,100%,49%,1.00);
+	color: hsla(346,89%,32%,1.00);
+}
+/*ENDSTORE*/
+/*--------------------------FOOTER--------------------------*/
+.sponsorscolumnas{
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	max-width: 1460px;
+}
+
+.sponsorscolumnas h2{
+	font-size: 12px;
+	color: grey;
+	margin: auto;
+	max-width: 20px;
+	padding: 16px 8px;
+	text-align: center;
+	transform: rotate(180deg);
+	width: 100%;
+	writing-mode: vertical-rl;
+}
+
+#lineaseparadora{
+	border-top: 1px solid hsla(0,0%,100%,.5);
+
+}
+
+.sponsorsarriba{
+	align-items: center;
+	display: flex;
+	justify-content: space-around;
+	margin: 0 20px;
+	padding: 4.75rem 0 5.313rem;
+	width: 100%;
+}
+
+/*animacion sponsors*/
+.sponsorsarriba a img{
+	filter: brightness(0) invert(1);
+	height: 50px;
+	width: auto;
+	transition: transform .2s;
+}
+
+.sponsorsarriba a img:hover{
+	filter: none;
+	width: auto;
+	transition: 0.4s ease-in-out;
+	transform: scale(1.2);
+}
+/*animacion sponsors*/
+/*-----------ENDfooterfondogrissponsors-------------*/
+
+/*-----------STARTfooterfondogrisclaro-------------*/
+.footerfondogrisclaro{
+	background-color: #2b2c33;
+	display: flex;
+	justify-content: center;
+}
+
+.doscolumnasffgc{
+	display: flex;
+	flex: 1 1 0px;
+	max-width: 1460px;
+	padding: 32px 6%;
+}
+
+.fgccolumnaizq{
+	width: 50%;
+}
+
+.fgccolumnaizq p{
+	color: #fff;
+	letter-spacing: 1px;
+	line-height: 20px;
+	padding: 1rem 0;
+}
+
+.fgcform{
+	align-items: center;
+	background: #e9e9ea;
+	border-radius: 1.875rem;
+	display: flex;
+	flex-direction: row;
+	max-width: 560px;
+	padding: 5px;
+	width: 100%;
+}
+
+.fgcform p{
+	font-size: 12px;
+	margin-left: 10px;
+	max-width: 400px;
+	width: 100%;
+}
+
+.fgcform button{
+	background-color: #55565c;
+	border: none;
+	border-radius: 1.875rem;
+	color: #fff;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 800;
+	letter-spacing: 1px;
+	line-height: 20px;
+	padding: 0.625rem 1.2rem;
+	width: max-content;
+}
+
+.iconfirmthat{
+	color: #fff;
+	padding-top: 1rem;
+}
+
+.iconfirmthat a{
+	color: #fff;
+}
+
+.fgccolumaderecha{
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+.fgccolumaderecha p{
+	color: #fff;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 20px;
+	padding: 1rem 0;
+	text-align: end;
+}
+/*-----------ENDfooterfondogrisclaro-------------*/
+
+/*-----------STARTfooterfondobordo-------------*/
+.footerfondobordo{
+	background-color: #8e001c;
+}
+
+.fgccolumaderecha a{
+	margin-left: 20px;
+	max-width: 50%;
+}
+
+.columnasfooterbordo{
+	margin: 0 auto;
+	padding: 50px 15px;
+	max-width: 1460px;
+}
+
+.columnasdisplay{
+	display: flex;
+	justify-content: space-between;
+}
+
+.columnasdisplay section{
+	margin: 0 10px;
+}
+
+.columnasdisplay h3{
+	color: hsla(358,32%,78%,1.00);
+	font-size: 18px;
+	text-transform: uppercase;
+	transition: opacity .1s ease-in;
+}
+
+.columnasdisplay section h3:hover{
+	color: hsla(0,0%,100%,1.00);
+	transition: .1s ease-out;
+}
+
+.columnascontent{
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	margin-top: 10px;
+}
+
+.columnascontent a{
+	color: #fff;
+	font-size: 14px;
+	transition: opacity .1s ease-in;
+}
+
+.columnascontent a:hover{
+	color: hsla(359,35%,73%,1.00);
+	transition: .1s ease-out;
+}
+
+.b3columnaderecha{
+	text-align: right;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	margin-top: 10px;
+	color: hsla(359,35%,73%,1.00);
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.divredes{
+	display: flex;
+	justify-content: space-between;
+	margin: 30px 10px 0;
+}
+
+.redessociales{
+	display: flex;
+	gap: 20px;
+}
+
+.redessociales a:hover{
+	opacity: .6;
+}
+/*-----------ENDfooterfondobordo-------------*/
+
+/*-----------STARTfooterfondogris-------------*/
+.footerfondogrislegales{
+	background-color: #18191c;
+}
+
+.footercopyandlegales{
+	display: flex;
+	margin: 0 auto;
+	padding: 20px;
+	max-width: 1460px;
+}
+
+.footercopyright{
+	color: #808084;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 1;
+	padding-right: 20px;
+	width: 50%;
+}
+
+.footerlegalesa{
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.footerlegalesa a{
+	color: #bdbbba;
+	display: flex;
+	font-size: 12px;
+	min-width: fit-content;
+	transition: opacity .1s ease-in;
+}
+
+.footerlegalesa p{
+	margin: 0 10px;
+	color: #bdbbba;
+}
+/*-----------ENDfooterfondogris-------------*/
+
+/*--------------------------END FOOTER--------------------------*/
+
+
+/*--------------------------------------------------------------------LOGIN------------------------------------------------------------------*/
+
+#fondologin{
+	display:flex;
+	height: 102vh;
+	justify-content: center;
+	align-items: center;
+	background-image: url("img/login/_img_ imagen fondo.svg");
+	background-size: cover;
+}
+
+#form-login{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	position: absolute;
+	right: 20%;
+	margin-top: 45px;
+}
+
+.header-container{
+	height: 185px;
+	background-color: #990A2C;
+	color: #fff;
+	background-image: url("img/login/fondo-lineas-header-login.png");
+	background-size: cover;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding: 20px;
+}
+
+.logoimagenlogin{
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.header-container h2{
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-bottom: 7px;
+}
+
+.ayuda-registro{
+	display: flex;
+	gap: 10px;
+}
+
+.crear-cuenta{
+	color: #FBBA00;
+}
+
+.container{
+	height: 648px;
+	background: #D4D4D5;
+	padding: 25px 30px;
+	border-radius: 10px;
+}
+
+.container .titulo{
+	font-size: 25px;
+	font-weight: 500;
+	position: relative;
+	color: white;
+	text-transform: uppercase;
+}
+
+.container form .informacion-usuario{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.input-caja{
+	padding-bottom: 20px;
+}
+
+.form .informacion-usuario .input-caja{
+	margin: 20px 0 12px 0;
+	width: calc(100% / 2 - 20px);
+}
+
+.informacion-usuario .input-caja .caja-info-completar{
+	display: block;
+	font-size: 11px;
+	margin-bottom: 5px;
+}
+
+.informacion-usuario .input-caja input{
+	height: 48px;
+	width: 335px;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	padding-left: 15px;
+	font-size: 16px;
+}
+
+.informacion-usuario .input-caja input:focus,
+.informacion-usuario .input-caja input:valid{
+	border-color: black;
+}
+
+form .check-login .check-titulo-login{
+	font-size: 15px;
+	font-weight: 500;
+	color: #4E515E;
+}
+
+form .check-login .category{
+	margin: 14px 0;
+}
+
+.check-login .category label{
+	display: flex;
+}
+
+.check-login .category .dot{
+	height: 27px;
+	width: 27px;
+	background: white;
+	border-radius: 30%;
+	margin-right: 1px;
+	margin-left: 4px;
+}
+
+.check-login .category .dot:hover{
+	background-color: #258575;
+}
+
+form input[type="radio"]{
+	display: none;
+}
+
+form .boton{
+	height: 45px;
+	margin-left: 170px;
+}
+
+form .boton input{
+	cursor: pointer;
+	border-radius: 5px;
+	color: #fff;
+	background-color: #000;
+	height: 100%;
+	font-size: 14px;
+	font-weight: 600;
+	width: 100%;
+	transform: skew(-20deg);
+	text-transform: uppercase;
+}
+
+.check-login{
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	font-size: 15px;
+	color: #4E515E;
+}
+
+.category{
+	background: url("img/svg/check_off.svg") no-repeat;
+	height: 33px;
+	align-items: center;
+	display: flex!important;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.olvidar-contra{
+	padding-left: 20px;
+	color: #990A2C;
+}
+
+.varientes-login{
+	display: flex;
+	justify-content: center;
+	margin: 30px;
+	font-size: 15px;
+	color: #4E515E;
+}
+
+.logos-fila1{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	padding-bottom: 5px;
+}
+
+.logos-fila2{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+.facebook-boton{
+	display: flex;
+	border-radius: 5px;
+	gap: 5px;
+	color: #fff;
+	background-color: #4267b2;
+	font-size: 14px;
+	text-transform: uppercase;
+	transform: skew(-20deg);
+	padding: 5px 25px 5px 25px;
+	align-items: center;
+	border-color: transparent;
+}
+
+.google-boton{
+	display: flex;
+	border-radius: 5px;
+	gap: 5px;
+	font-size: 14px;
+	text-transform: uppercase;
+	transform: skew(-20deg);
+	align-items: center;
+	padding: 9px 40px 9px 40px;
+	border-color: transparent;
+}
+
+.apple-boton{
+	display: flex;
+	border-radius: 5px;
+	gap: 5px;
+	color: #fff;
+	background-color: #000000;
+	font-size: 14px;
+	text-transform: uppercase;
+	transform: skew(-20deg);
+	align-items: center;
+	padding: 10px 40px 10px 40px;
+	border-color: transparent;
+}
+
+.amazon-boton{
+	display: flex;
+	border-radius: 5px;
+	gap: 5px;
+	color: #fff;
+	background-color: #FF9900;
+	font-size: 14px;
+	text-transform: uppercase;
+	transform: skew(-20deg);
+	padding: 10px 40px 10px 40px;
+	border-color: transparent;
+}
+
+.form-txt{
+	display: flex;
+	margin-top: 20px;
+	gap: 5px;
+	justify-content: center;
+	font-size: 10px;
+	color: #0000004D;
+}
+
+.terminos-condiciones{
+	font-size: 10px;
+	color: #990A2C;
+}
+
+.login a{
+	color: #fff;
+	text-decoration: none;
+}
+
+/*--------------------------END LOGIN--------------------------*/
+
+/*-----------------------------------------------------------TICKETS------------------------------------------------------------------*/
+
+#tickets{
+	width: 100%;
+	height: 100%;
+}
+
+#tickets main{
+	background-color: #f6f6f6;
+	height: 100%;
+}
+
+.tickets-head{
+	background: black;
+}
+
+.tickets-head-negro{
+	color: white;
+	padding-bottom: 20px;
+	padding-top: 125px;
+	width: 100%;
+	padding-left: 55px;
+}
+
+.tickets-head-negro h2{
+	font-size: 36px;
+	font-style: italic;
+	line-height: 48px;
+	text-transform: uppercase;
+}
+
+.info-head-tickets-negro{
+	display: flex;
+	gap: 20px;
+	color: #BDBBBA;
+	font-size: 18px;
+}
+
+.tickets-head-amarillo{
+	background: #FFBA00;
+	color: #990A2C;
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+}
+
+.info-head-tickets-amarillo{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-transform: uppercase;
+	
+}
+
+.my-asr-tickets-imagen{
+	padding: 10px;
+}
+
+.botonessinfondoticket{
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.botonessinfondoticket p{
+	display: flex;
+	align-items: center;
+	background-repeat: no-repeat;
+	color: #000;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 400;
+	gap: 0.5rem;
+	height: auto;
+	padding: 0.625rem 1.5rem;
+	text-align: center;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+.botonesflexticket{
+	align-items: center;
+	background-color: #f6f6f6;
+	display: flex;
+	height: 84px;
+	justify-content: flex-end;
+	max-width: 1460px;
+	padding-top: 20px;
+	transition: .3s ease-in-out;
+	width: 100%;
+}
+
+.botonesflexticket a{
+	background-color: transparent;
+	background-repeat: no-repeat;
+	color: #000;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 18px;
+	padding: 0.625rem 1.5rem;
+	text-align: center;
+	text-transform: uppercase;
+	white-space: nowrap;
+	border: 1px solid #000;
+	border-radius: 5rem;
+	text-decoration: none;
+	margin-left: 22px;
+}
+
+.botonesflexticket a:hover{
+	color: azure;
+	background-color: hsla(0,0%,17%,1.00);
+}
+
+.partidosticketshtml{
+	margin: 0 auto;
+	padding-bottom: 30px;
+	max-width: 1380px;
+	min-width: 320px;
+}
+
+.partidosticketshtml img{
+	margin-top: 20px;
+}
+
+#tickets{
+	width: 100%;
+	height: 100%
+}
+
+.main h3{
+	color: black;
+	font-family: "AsRomaLight";
+	font-size: 18px;
+}
+
+.men{
+	transform: rotate(180deg);
+	writing-mode: vertical-rl;
+	background-color: brown;
+	color: aliceblue;
+	font-size: 12px;
+	padding: 70px 2px;
+}
+
+.thrusday{
+	display: flex;
+	background-color: white;
+	align-items: center;
+}
+
+.thrusdayp{ 
+	margin-right: -55px;
+	display: flex;
+	padding: 26px 140px 35px 110px;
+	text-align: center;
+}
+
+.thrusdayp p{
+	padding: 0px 20px 10px 0px;
+	font-size: 18px;
+	font-weight: 800;
+}
+
+.thrusdayp img{
+	display: flex;
+	margin-left: 70px;
+	margin: 0px 52px 0px 30px;
+	
+}
+
+.stadioolimpico{
+	color: hsla(0,0%,82%,1.00);
+	font-size: 10px;
+	font-weight: 400;
+}
+
+.imagenes{
+	display: flex;
+	align-items: center;
+	margin: 0px 70px 0px 70px;
+}
+
+.vs{
+	display: flex;
+	font-size: 18px;
+}
+
+.botonhtmlticket{
+	display: flex;
+}
+
+.botonhtmlticket button{
+	background-color: hsla(44,100%,50%,1.00);
+	border-radius: 100px;
+	color: hsla(346,88%,30%,1.00);
+	height: 40px;
+	width: 250px;
+	justify-content: center;
+	border: none;
+	margin: 35px 60px 0px 40px;
+	padding: 0
+}
+
+#htmlticketbotonnotificacion{
+	align-items: center;
+	font-weight: 800;
+	height: 40px;
+	width: 250px;
+	display: flex;
+	background-color: white;
+	border-radius: 100px;
+	border: solid black;
+	justify-content: center;
+}
+
+.botonhtmlticket p{
+	font-size: 10px;
+	padding-bottom: 73px;
+}
+
+#flex-tickets{
+	display: flex;
+	column-gap: 15px;
+	padding: 10px 0px;
+}
+
+#flex-tickets h4{
+	cursor: pointer;
+}
+
+#flex-tickets h4:hover{
+	color: #FBBA00;
+}
+
+.p-tickets{
+	font-family: AsRomaRegular;
+	font-size: 14px;
+}
+
+#margen-preguntas{
+	padding: 0px 225px 30px;
+}
+
+#margen-preguntas h3{
+	color: white;
+	padding-top: 35px;
+}
+
+#margen-preguntas li{
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer;
+	padding: 20px 0px;
+	list-style-type: none;
+}
+/*------------------------------------------------------------FIN DE TICKETS------------------------------------------------------------*/
+
+/*------------------------------------------------------------HTML NOTICIAS------------------------------------------------------------*/
+
+#fondonoticiashtml{
+	background-color: white;
+}
+
+.botoneranoticiashtml{
+	margin: 0 auto;
+	max-width: 1460px;
+	padding: 30px 10px;
+	display: flex;
+	gap: 0.75rem;
+}
+
+.botoneranoticiashtml button{
+	background-color: transparent;
+	border-radius: 20px;
+	border-color: transparent;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 800;
+	padding: 0.563rem 1.125rem;
+	position: relative;
+	transition: all .5s ease 0s;
+}
+
+#video{
+	display: flex;
+	justify-content: center;
+}
+
+.noticiashtml{
+	flex-wrap: wrap;
+	overflow-x: unset;
+	display: flex;
+	margin: auto;
+	max-width: 1460px;
+	position: relative;
+}
+
+.noticiashtml div{
+	color: #fff;
+	font-size: 20px;
+	line-height: 24px;
+	padding: 35px 9px;
+}
+
+.noticiashtml h3{
+	bottom: 30px;
+	font-weight: 200;
+	padding-left: 15px;
+	font-size: 18px;
+	line-height: 5px;
+	position: relative;
+}
+
+.noticiashtml article{
+	display: flex;
+	width: 450px;
+	color: black;
+	font-size: 15px;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.noticiashtml img:hover{
+	transform: scale(1.03);
+	opacity: 0.6;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+}
+
+.botonmasnoticias{
+	justify-content: center;
+	padding-bottom: 80px;
+	position: relative;
+	display: flex;
+}
+
+.botonmasnoticias button{
+	background: transparent;
+	border: 2px solid #000;
+	border-radius: 100px;
+	font-size: 16px;
+	font-weight: 800;
+	line-height: 20px;
+	padding: 1rem 2.5rem;
+	text-transform: uppercase;
+	z-index: 20;
+}
+
+.botoneranoticiashtml button:hover{
+	background-color: hsla(0,0%,82%,1.00);
+}
+
+.botonmasnoticias button:hover{
+	background-color: black;
+	color: white;
+}
+/*------------------------------------------------------------END HTML NOTICIAS------------------------------------------------------------*/
+
+/*------------------BUSCADOR----------------------*/
+
+#boton-buscador{
+	background-color: transparent;
+	padding: 5px 15px;
+	border-radius: 25px;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 600;
+	border: 2px solid #fbb900ff;
+	margin-left: 170px;
+}
+
+#cruz{
+	font-weight: 600;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+#fondo-buscador{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	background: url("img/buscador/fondobuscador.png");
+}
+
+#buscador-abajo{
+	position: relative;
+	text-align: center;
+	display: flex;
+	gap: 15px;
+	align-items: flex-end;
+}
+
+#buscador{
+	display: flex;
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 50px;
+	border-bottom: 2px solid #fbb900ff;
+}
+
+/*------------------FIN BUSCADOR----------------------*/
+
+/*---------------------------------------------------------------------MEDIA-----------------------------------------------------------------------*/
+@media screen and (max-width: 600px) {
+	
+	header {
+		height: 80px;
+	}
+	
+	.fondorojo{
+		display: grid;
+		grid-template-areas: "left center right";
+		height: 65px;
+		padding: 0 20px;
+	}
+	
+	.fondoamarillo{
+		height: 25px;
+		align-items: center;
+		display: flex;
+		gap: 20px;
+		padding: 0 20px;
+		width: 100%;
+	}
+	
+	.romalogo{
+		height: 100%;
+		margin: 0 auto;
+		max-height: 100%;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-content: flex-start;
+	}
+	
+	.botonera{
+		display: none;
+	}
+	
+	.colunma-derecha{
+		grid-area: right;
+		position: relative;
+		width: 100%;
+		left: 43px;
+		display: flex;
+		align-items: center;
+	}
+	
+	.botonesheader{
+		width: 100%;
+		gap: 10%;
+		align-items: center;
+	}
+	
+	.botontickets{
+		height: 36px;
+		justify-content: center;
+		width: 36px;
+	}
+	
+	.botontickets img{
+		height: 60%;
+		width: 100%;
+	}
+	
+	.botonshop{
+		height: 35px;
+		width: 40px;
+		margin: auto;
+	}
+	
+	.botonshop p{
+		display: none;
+	}
+	
+	.botontickets p{
+		display: none;
+	}
+	
+	.login{
+		visibility: hidden;
+	}
+	
+	#loginparamobile{
+		visibility: visible;
+		filter: brightness(0) invert(1);
+	}
+	
+	.idiomaingles{
+		
+	}
+	
+	.botoneraderecha img{
+		display: none;
+	}
+	
+	.botoneraderecha{
+		display: flex;
+		height: fit-content;
+		justify-content: center;
+		margin-left: 18px;
+		width: fit-content;
+	}
+	
+	.romalogo img{
+		height: 63px;
+		margin-top: 20px;
+		margin-left: 59px;
+	}
+	
+	/*carrusel*/
+	.carrusel-principal-txt{
+		display: none;
+	}
+	
+	.carrusel-principal-mobile{
+		height: 100%;
+		max-height: 90vh;
+		min-height: 90vh;
+		display: flex;
+	}
+	
+	.carrusel-principal-mobile img{
+		transition: 0.5s;
+		box-shadow: 0px 7px 20px 2px #00000070;
+		margin-top: 10px;
+	}
+	
+	.contenedor-controles-mobile{
+		margin-top: 150%;
+	}
+	
+	/*noticias botones*/
+	.botones-header-noticias{
+		display: contents;
+	}
+	
+	.lista-de-noticias{
+		padding: 10px;
+	}
+	
+	.lista-de-noticias h3{
+		font-size: 16px;
+	}
+	
+	.lista-de-noticias p{
+		font-size: 14px;
+	}
+
+	.caja-equipo-local{
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		width: 40%;
+		gap: 52px;
+		font-size: 18px;
+	}
+	
+	.caja-equipo-local img{
+		width: 64px;
+		height: 64px;
+	}
+	
+	.caja-equipo-visitante{
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		width: 40%;
+		gap: 38px;
+		font-size: 18px;
+	}
+	
+	.caja-equipo-visitante img{
+		width: 64px;
+		height: 64px;
+	}
+	
+	.barras-de-color-de-caja-de-partido{
+		justify-content: center;
+		display: flex;
+		flex-direction: row;
+		height: 10px;
+		margin: 45px;
+		width: calc(100% - 55px);
+	}
+	
+	
+	.footercopyandlegales{
+		flex-direction: column;
+		display: flex;
+		padding: 20px;
+	}
+	
+	.footercopyright{
+		display: flex;
+		text-align: center;
+		width: 100%;
+		padding-bottom: 10px;
+		font-size: 10px;
+	}
+	
+	.footerlegalesa{
+		align-items: center;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 0 auto;
+		font-size: 7px;
+	}
+	
+	.columnasdisplay{
+		display: grid;
+		grid-template-columns: repeat(2,1fr);/*no se porque dice que esta mal porque funciona, nos dijeron que podia ser que vaya con . pero no funciona*/
+		gap: 20px;
+		text-align: center;
+	}
+	
+	.b3columnaderecha{
+		text-align: center;
+	}
+	
+	.divredes{
+		align-items: center;
+		flex-direction: column;
+		gap: 15px;
+		justify-content: center;
+	}
+	
+	.sponsorsarriba{
+		flex-direction: column;
+		flex-wrap: wrap;
+		margin: 0;
+		padding: 18px 82px 45px 45px;
+	}
+	
+	.sponsorsarriba a img{
+		height: 30px;
+		margin: 15px auto;
+	}
+	
+	.thrusday{
+		display: flex;
+	}
+	
+	.headerstore{
+		align-items: flex-start;
+		display: flex;
+		flex-direction: column;
+		margin: 0px 0px 0px 30px;
+	}
+	
+	.headerstore h2{
+		padding-bottom: 20px;
+	}
+	
+	.headerstore a{
+		display: flex;
+	}
+	
+	.store{
+		grid-template-columns: 290px 360px 360px 360px 360px 360px 360px
+	}
+	
+	#formulariogrande{
+		 height: 100%;
+	}
+	
+	#form-login{
+		max-width: 100%;
+		width: 100%;
+		min-height: calc(100vh - 185px);
+		border-radius: 0;
+		margin: auto;
+	}
+	
+	/*-------------------noticias media*-----------------------*/
+	#fondonoticiashtml{
+		background: #18191c;
+	}
+	
+	.botoneranoticiashtml{
+		display: -webkit-inline-box;
+	}
+	
+	.botoneranoticiashtml button{
+		color: #BDBBBA;
+	}
+	
+	.noticiashtml{
+		flex-wrap: wrap;
+		display: flex;
+		position: relative;
+		justify-content: center;
+	}
+	
+	.noticiashtml p{
+		color: white;
+		font-size: 14px;
+	}
+	
+	.botonmasnoticias button{
+		background-color: white;
+	
+	}
+/*------------------------SECCION MATCHES------------------------*/
+	
+	.matches{
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.titulo-principal{
+		margin-top: 10px;
+	}
+	
+/*------------------------SECCION MATCHES FIN------------------------*/
+
+/*------------------------SECCION PLAYERS------------------------*/
+	
+	#fondo-players{
+		background-color: #212529;
+	}
+	
+	.jugadores-carrusel{
+		width: 100%;
+		grid-column-gap: 30px;
+	}
+
+	.nombres-jugadores{
+		color: #fff;
+	}	
+
+/*------------------------SECCION PLAYERS FIN------------------------*/
+	
+/*------------------------SECCION DYBALA------------------------*/
+	
+	.dybala{
+		align-items: center;
+		display: flex;
+		justify-content: center;
+	}
+
+	#columna-izq{
+		display: none;
+	}
+
+	.columna-der{
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		background: url("img/index/main/dybalajugador/dybala-miniatura.png");
+		padding-left: 39px;
+		padding-top: 215px;
+		background-repeat: no-repeat;
+	}
+
+	.h2-dybala{
+		font-size: 40px;
+		font-family: AsRomaMedium;
+	}
+
+	#veintiuno{
+		font-family: AsRomaInline;
+		position: relative;
+		left: 130px;
+		bottom: 100px;
+	}
+
+	.titulo-principal-players{
+		font-size: 30px;
+		margin: 0px;
+	}
+	
+/*------------------------SECCION DYBALA FIN------------------------*/
+	
+}
